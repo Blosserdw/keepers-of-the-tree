@@ -18,7 +18,7 @@ public enum Levels
 }
 
 public class GameManager : MonoBehaviour {
-
+    
     private static GameManager instance = null;
     public static GameManager Instance
     {
@@ -268,5 +268,10 @@ public class GameManager : MonoBehaviour {
         yield return new WaitForSeconds(0.1f);
 
         UIManager.Instance.LoadHUBUI();
+    }
+
+    public void ButtonClicked()
+    {
+        Debug.Log("BUTTON CLICKED!");
     }
 }
